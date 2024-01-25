@@ -62,7 +62,7 @@ class GameApp {
     $('.target').addClass('moving');
 
     // Count down 60 seconds, and the remaining 10 seconds will turn into big red text
-    let sec = 15;
+    let sec = 1500;
     // The recursive version of setTimeout can ensure that the delay between each execution is accurate, but setInterval cannot, because the execution time of func offsets part of the interval time. In extreme cases, if the execution time of the function exceeds the time set by delay, there will be no pause every time setTimeout is called.
     (function count() {
       $('.remainingTime').text(sec);
